@@ -1,9 +1,14 @@
 # jpx-tokyo-stock-exchange-prediction
+
 kaggle [JPX Tokyo Stock Exchange Prediction](https://www.kaggle.com/competitions/jpx-tokyo-stock-exchange-prediction/overview) に参加。
 
-
 ## Overview
+
 ### Description
+
+株式の収益性を予測する.
+
+
 金融市場で成功するためには、確実な投資対象を見極めることが必要です。株式やデリバティブが過小評価されている場合は、購入することが理にかなっています。割高なら売ればいい。このような金融の判断は、従来は専門家が手作業で行っていましたが、テクノロジーの進歩により、個人投資家にも新たな機会が訪れました。特にデータサイエンティストは、学習したモデルからの予測に基づいてプログラム上で意思決定を行う、定量取引に興味を持つかもしれません。
 
 金融市場を分析し、投資戦略を策定するために使用される既存の定量取引の取り組みはたくさんあります。このような戦略を立て、実行するためには、過去とリアルタイムの両方のデータが必要ですが、特に個人投資家にとっては入手が困難なのが現状です。このコンペティションは、日本市場の金融データを提供し、個人投資家が市場を最大限に分析することを可能にします。
@@ -17,6 +22,7 @@ kaggle [JPX Tokyo Stock Exchange Prediction](https://www.kaggle.com/competitions
 本コンテストはコードコンペティションです。詳しくは[コード要件](https://www.kaggle.com/competitions/jpx-tokyo-stock-exchange-prediction/overview/description#:~:text=Competition.%20Refer%20to-,Code%20Requirements,-for%20details.)をご覧ください。
 
 ### Evaluation
+
 提出物は、日々のスプレッドリターンのシャープレシオで評価されます。ある日にアクティブだった各銘柄をランク付けする必要があります。1日のリターンは、上位200位（例：0～199位）の銘柄を買い、下位200位（例：1999～1800位）の銘柄を空売りとして扱います。そして、銘柄のランクに応じた重み付けを行い、翌日に購入し、翌々日に売却したと仮定してポートフォリオのトータルリターンを計算します。この指標のpythonによる実装はこちらでご覧になれます。
 
 このコンペティションには、提供されているpythonの時系列APIを使用して応募する必要があり、これにより、モデルが時間的にピークにならないことを保証します。APIを使用するには、Kaggle Notebooksのこのテンプレートに従います。
@@ -28,11 +34,15 @@ kaggle [JPX Tokyo Stock Exchange Prediction](https://www.kaggle.com/competitions
 行の順序を変更する。
 
 ### Timeline
+
 #### Training Timeline
+
 April 4, 2022 - 開始日
 June 28, 2022 - エントリー締め切り。出場するためには、この日までに競技規則に同意する必要があります。
 June 28, 2022 - チーム合併の締切。この日が、参加者がチームに参加したり、合併したりできる最終日です。
 July 5, 2022 - 最終提出期限。
 すべての締め切りは、特に断りのない限り、該当する日の午後11時59分（UTC）です。大会主催者は、必要と判断した場合、コンテストのスケジュールを更新する権利を有します。
+
 #### Forecasting Timeline:
+
 最終提出期限の後、選択されたノートブックに対して実行される市場データの更新を反映するために、リーダーボードに定期的な更新が行われます。更新はおよそ2週間おきに行われる予定です。
